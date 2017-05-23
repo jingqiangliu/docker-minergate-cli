@@ -6,7 +6,7 @@ RUN apt-get update \
         wget \
     && rm -r /var/lib/apt/lists/*
 
-RUN wget -q --content-disposition https://minergate.com/download/ubuntu \
+RUN wget -q --content-disposition https://download.minergate.com/ubuntu \
     && dpkg -i *.deb \
     && rm *.deb
 
